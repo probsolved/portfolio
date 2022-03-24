@@ -12,8 +12,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     var options = {
-      strings: ['','Front-End', 'Angular','JavaScript', 'TypeScript'],
-      typeSpeed: 120,
+      strings: ['','Front-End', 'Angular','JavaScript', 'TypeScript', "Wordpress", "LaTeX / BibTeX"],
+      typeSpeed: 80,
       backSpeed: 100,
       loop: true,
     };

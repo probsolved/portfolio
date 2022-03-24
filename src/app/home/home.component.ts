@@ -12,12 +12,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     var options = {
-      strings: ['','Full-Stack', 'WEB','Mobile'],
+      strings: ['','Front-End', 'Angular','JavaScript', 'TypeScript'],
       typeSpeed: 120,
       backSpeed: 100,
       loop: true,
     };
-    
+
     var typed = new Typed('.typed', options);
     typed.reset(true)
   }

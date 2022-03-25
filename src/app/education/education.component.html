@@ -34,15 +34,13 @@
         </ul>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <h4><strong>Expériences</strong></h4>
+        <h4><strong>Experience</strong></h4>
         <ul class="timeline">
           <li>
-            <h5>Dévloppeur en freelance</h5>
-            <em>Scotfy, Lyon, Fr</em>
+            <h5>Freelance Developer</h5>
+            <em>Missouri, USA</em>
             <div class="d-flex flex-row">
-              <p class="year p-2 d-flex justify-content-center">
-                2020 - 2021 (2 mois)
-              </p>
+              <p class="year p-2 d-flex justify-content-center">2020 - 2022</p>
               <button
                 (click)="detailOnClick('freelanceScotfy_detail')"
                 type="button"
@@ -65,12 +63,10 @@
             </p>
           </li>
           <li>
-            <h5>Dévloppeur en freelance</h5>
-            <em>AGC Glass Europe, Maubeuge, Fr</em>
+            <h5>CIO, VP for Information Integration</h5>
+            <em>Oklahoma, USA</em>
             <div class="d-flex flex-row">
-              <p class="year p-2 d-flex justify-content-center">
-                2020 - 2021 (5 mois)
-              </p>
+              <p class="year p-2 d-flex justify-content-center">2012-2019</p>
               <button
                 (click)="detailOnClick('freelance_detail')"
                 type="button"
@@ -89,12 +85,10 @@
             </p>
           </li>
           <li>
-            <h5>Dévloppeur en alternance</h5>
-            <em>AGC Glass Europe, Maubeuge, Fr</em>
+            <h5>Freelance Developer</h5>
+            <em>Oklahoma, USA</em>
             <div class="d-flex flex-row">
-              <p class="year p-2 d-flex justify-content-center">
-                2019 - 2020 (1 an)
-              </p>
+              <p class="year p-2 d-flex justify-content-center">2018-2020</p>
               <button
                 (click)="detailOnClick('alternance_detail')"
                 type="button"
@@ -115,30 +109,6 @@
               Materials, MySql
             </p>
           </li>
-          <li>
-            <h5>Stagiaire Dévloppeur logiciel</h5>
-            <em>Scotfy, Lyon, Fr</em>
-            <div class="d-flex flex-row">
-              <p class="year p-2 d-flex justify-content-center">
-                2018 (3 mois)
-              </p>
-              <button
-                (click)="detailOnClick('stage_detail')"
-                type="button"
-                class="btn btn-primary"
-              >
-                + Detail
-              </button>
-            </div>
-            <p *ngIf="stageIsShown">
-              <strong>Multilingue:</strong> Mise en place d’un système de
-              gestion de la langue afin de permettre à l’utilisateur de choisir
-              la langue des interfaces, des messages et des logs.<br />
-              <strong>Clé de licence:</strong> Validation du logiciel à l’aide
-              d’une clé de licence basée sur le nom d’utilisateur Windows.<br />
-              <strong>Technologies:</strong> C#, .NET, Chiffrement AES-256
-            </p>
-          </li>
         </ul>
       </div>
       <div
@@ -146,13 +116,13 @@
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        <div class="container row">
+        <!-- <div class="container row">
           <div
             class="aos-init aos-animate"
             data-aos="fade-up"
             data-aos-delay="300"
-          >
-            <h4><strong>Langues</strong></h4>
+          > -->
+        <!-- <h4><strong>Langues</strong></h4>
             <div class="noProgress langue">
               <span class=""
                 ><img
@@ -161,9 +131,9 @@
                   alt="drapeau de la france"
                 /><strong> Français</strong> <i class="val"> Courant</i></span
               >
-            </div>
+            </div> -->
 
-            <div class="noProgress langue">
+        <!-- <div class="noProgress langue">
               <span class=""
                 ><img
                   src="assets/images/united-kingdom-flag.png"
@@ -171,27 +141,30 @@
                   alt="drapeau du royaume uni"
                 /><strong> Anglais</strong> <i class="val"> Bon niveau</i></span
               >
-            </div>
-          </div>
-        </div>
+            </div> -->
+        <!-- </div>
+        </div> -->
         <div class="container row">
           <div
             class="mt-3 aos-init aos-animate"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <h4><strong>Centre d'intérêt</strong></h4>
+            <h4><strong>Interests</strong></h4>
             <div class="noProgress langue">
               <span>
                 <fa-icon [icon]="volleyBallIcon"></fa-icon
-                ><strong> Sport</strong> <i class="val"> 5 ans Volley Ball</i>
+                ><strong>Sports: </strong> <i class="val">Baseball, Fishing</i>
               </span>
             </div>
 
             <div class="noProgress langue">
               <span>
-                <fa-icon [icon]="planeIcon"></fa-icon><strong> Voyages</strong>
-                <i class="val"> Belgique, Espagne, Pays-Bas, Suisse</i>
+                <fa-icon [icon]="planeIcon"></fa-icon><strong> Travel: </strong>
+                <i class="val">
+                  Netherlands, Germany, Switzerland, Mexico, Guatemala,
+                  Canada</i
+                >
               </span>
             </div>
 

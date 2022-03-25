@@ -22,20 +22,20 @@
               class="links mt-auto d-flex justify-content-center"
             >
               <a
-                href="assets/images/mylibrarian.png"
+                href="assets/images/mylibrarian2.png"
                 data-gall="teamTravelerGallery"
                 class="venobox vbox-item"
                 title="Mes Voyages"
                 ><i class="bx bx-zoom-in bx-md"></i
               ></a>
               <a
-                href="assets/images/mylibrarian.png"
+                href="assets/images/mylibrarian3.png"
                 data-gall="teamTravelerGallery"
                 class="venobox vbox-item"
                 title="Détail du voyage"
               ></a>
               <a
-                href="assets/images/logements.webp"
+                href="assets/images/mylibrarian4.png"
                 data-gall="teamTravelerGallery"
                 class="venobox vbox-item"
                 title="Mes Logements"
@@ -106,23 +106,18 @@
                 ><i class="bx bx-zoom-in bx-md"></i
               ></a>
               <a
-                href="assets/images/checkitout.png"
+                href="assets/images/courses1.png"
                 data-gall="MauticGallery"
                 class="venobox vbox-item"
                 title="Check It Out! Course Delivery Platform"
               ></a>
               <a
-                href="assets/images/email-detail.jpg"
+                href="assets/images/courses2.png"
                 data-gall="MauticGallery"
                 class="venobox vbox-item"
                 title="Performance d'un émail"
               ></a>
-              <a
-                href="assets/images/asset-detail.jpg"
-                data-gall="MauticGallery"
-                class="venobox vbox-item"
-                title="Performance d'un Asset"
-              ></a>
+
               <a href="#portfolio" title="En cours" target="_BLANK"
                 ><i class="bx bx-link bx-md"></i
               ></a>
@@ -131,7 +126,7 @@
           <div class="card-body">
             <h3 class="card-title">Check It Out! Course Delivery Platform</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
-            <p class="card-text">PHP, JavaScript, TypeScript</p>
+            <p class="card-text">PHP, JavaScript, TypeScript, Moodle</p>
             <div class="d-flex flex-row justify-content-center">
               <a
                 href="https://courses.mylibrarian.online"
@@ -145,24 +140,25 @@
                 type="button"
                 class="btn btn-primary"
               >
-                + Détail projet
+                + Project Details
               </button>
             </div>
             <div *ngIf="mauticMonitoringIsShown" class="mt-3">
-              <p>Mautic est un outil open source de marketing automatique</p>
               <p>
-                L'application permet d'avoir des rapports dynamiques et
-                détaillés, d’analyser les tendances individuels des
-                campagnes.<br />
-                Un tableau de bord visuellement convivial vous donne un point de
-                vue rapide unique sur la performance de: vos campagnes
-                numériques, assets, et formulaires.
+                Check It Out! is a full-featured online course delivery
+                platform.
               </p>
-              <p>L'application est disponible en Français et en Anglais.</p>
+              <p>
+                Students and instructors access their courses through
+                customizable dashboards. Course content, assignments, and
+                deadlines are collated into a unified calendar and reminder
+                system.
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <!-- Portfolio Project 3 **************** -->
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
         <div class="card shadow-lg p-3 bg-white rounded">
           <div
@@ -173,32 +169,21 @@
               id="pokedex-img"
               class="img-wrap"
               style="height: 300px; width: 100%"
-              [ngStyle]="{ backgroundImage: 'url(assets/images/pokedex.png)' }"
+              [ngStyle]="{
+                backgroundImage: 'url(assets/images/latitude2.png)'
+              }"
             ></div>
             <div
               id="pokedex-link"
               class="links mt-auto d-flex justify-content-center"
             >
               <a
-                href="assets/images/pokedex.png"
+                href="assets/images/latitude.png"
                 data-gall="pokedexGallery"
                 class="venobox vbox-item"
                 title="Pokedex"
                 ><i class="bx bx-zoom-in bx-md"></i
               ></a>
-              <a
-                href="assets/images/trainers.png"
-                data-gall="pokedexGallery"
-                class="venobox vbox-item"
-                title="Trainers"
-              ></a>
-              <a
-                href="assets/images/profile-trainer.png"
-                data-gall="pokedexGallery"
-                class="venobox vbox-item"
-                title="Profile"
-              ></a>
-
               <a href="#portfolio" title="Indisponible"
                 ><i class="bx bx-link bx-md"></i
               ></a>
@@ -208,38 +193,35 @@
           <div class="card-body">
             <h3 class="card-title">Pediatric Speech Therapy</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
-            <p class="card-text">
-              Java, J2EE, SpringBoot, TDD, MySQL, BootStrap, Services,
-              Deploiment
-            </p>
+            <p class="card-text">Wordpress, CSS, JavaScript</p>
             <div class="d-flex flex-row justify-content-center">
               <a
-                href="https://github.com/ifi-2019/trainer-ui-zinedineBenkhider"
+                href="https://www.latitudepediatrictherapy.com"
                 target="_blank"
                 type="button"
                 class="btn btn-primary mr-3"
-                >Code Source</a
+                >Live Site</a
               >
               <button
                 (click)="detailOnClick('pokedex')"
                 type="button"
                 class="btn btn-primary"
               >
-                + Détail projet
+                + Project Details
               </button>
             </div>
             <div *ngIf="pokedexIsShown" class="mt-3">
-              <p>Affichage du détail des pokémons et de leurs drésseurs.</p>
+              <p>A corporate website for a professional therapy company.</p>
               <p>
-                L'application contient deux micro-service: pokemon management et
-                trainer management, qui exposent un canal de communication
-                REST/JSON.<br />Le 3éme micro-service WEB-UI se connecte aux
-                deux micro-service.
+                This application provides basic information to their clients:
+                photos, maps, contact information, forms, and alert
+                notifications. Note, this site has been adapted by the client.
               </p>
             </div>
           </div>
         </div>
       </div>
+      <!-- Portfolio project 4************** -->
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
         <div class="card shadow-lg p-3 mb-5 bg-white rounded">
           <div
@@ -251,7 +233,7 @@
               class="img-wrap card-header"
               style="height: 300px; width: 100%"
               [ngStyle]="{
-                backgroundImage: 'url(assets/images/portfolio.png)'
+                backgroundImage: 'url(assets/images/stumped2.png)'
               }"
             ></div>
             <div
@@ -259,30 +241,22 @@
               class="links d-flex justify-content-center"
             >
               <a
-                href="assets/images/portfolio.png"
+                href="assets/images/stumped.png"
                 data-gall="portfolioGallery"
                 class="venobox vbox-item"
                 title="Portfolio"
                 ><i class="bx bx-zoom-in bx-md"></i
               ></a>
-              <a
-                href="https://medium.com/zinedine-projects/beautiful-cv-portfolio-72921a198640"
-                title="Article"
-                target="_BLANK"
-                ><i class="bx bx-link bx-md"></i
-              ></a>
             </div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Portfolio</h3>
+            <h3 class="card-title">Get Stumped! Trivia App</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
-            <p class="card-text">
-              Angular11, Html5, CSS, TypeScript, BootStrap
-            </p>
+            <p class="card-text">HMTL5, CSS3</p>
 
             <div class="d-flex flex-row justify-content-center">
               <a
-                href="https://github.com/zinedineBenkhider/portfolio"
+                href="https://github.com/probsolved/Stumped-Trivia-App"
                 target="_blank"
                 type="button"
                 class="btn btn-primary mr-3"
@@ -293,7 +267,7 @@
                 type="button"
                 class="btn btn-primary"
               >
-                + Détail projet
+                + Project Details
               </button>
             </div>
 
@@ -313,6 +287,7 @@
           </div>
         </div>
       </div>
+      <!-- Portfolio project 5**************** -->
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
         <div class="card shadow-lg p-3 mb-5 bg-white rounded">
           <div
@@ -323,34 +298,28 @@
               id="riddle-img"
               class="img-wrap card-header"
               style="height: 300px; width: 100%"
-              [ngStyle]="{ backgroundImage: 'url(assets/images/riddle.png)' }"
+              [ngStyle]="{
+                backgroundImage: 'url(assets/images/brackets1.png)'
+              }"
             ></div>
             <div id="riddle-link" class="links d-flex justify-content-center">
               <a
-                href="assets/images/riddle.png"
+                href="assets/images/brackets2.png"
                 data-gall="riddleGallery"
                 class="venobox vbox-item"
                 title="riddle"
                 ><i class="bx bx-zoom-in bx-md"></i
               ></a>
-              <a
-                href="https://transfer-riddle-solver.herokuapp.com/index.html"
-                title="Lien"
-                target="_BLANK"
-                ><i class="bx bx-link bx-md"></i
-              ></a>
             </div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Transfer Riddle</h3>
+            <h3 class="card-title">Bracketology</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
-            <p class="card-text">
-              Java, J2EE(Web Services), JavaScript, Html5, CSS, BootStrap
-            </p>
+            <p class="card-text">HTML5, CSS3, JavaScript</p>
 
             <div class="d-flex flex-row justify-content-center">
               <a
-                href="https://github.com/zinedineBenkhider/transfer_riddle_client"
+                href="https://github.com/probsolved/Bracketology"
                 target="_blank"
                 type="button"
                 class="btn btn-primary mr-3"
@@ -361,18 +330,16 @@
                 type="button"
                 class="btn btn-primary"
               >
-                + Détail projet
+                + Project Details
               </button>
             </div>
 
             <div *ngIf="riddleIsShown" class="mt-3">
               <p>
-                Affichage des étapes de la résolution d'énigme de transvasement.
-                Étant donné deux réservoirs vides de contenance X et Y, comment
-                obtenir précisément T litres dans l’un des deux réservoirs (T
-                étant un entier). On peut remplir ou vider un réservoir, et
-                transvaser le contenu de l’un dans l’autre, jusqu’à ce que la
-                source soit vide ou la destination pleine.
+                This project is actively under development. It is a pure HTML
+                and CSS project at the moment, but will use JavaScript to allow
+                users to select their teams. Updates will be provided through an
+                API call.
               </p>
             </div>
           </div>

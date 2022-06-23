@@ -1,6 +1,9 @@
 <section id="portfolio">
   <div class="container">
     <h2><strong>Portfolio</strong></h2>
+
+    <!-- MyLibrarian Online -->
+    <!-- Card Header -->
     <span class="bar-title mb-5"></span>
     <div class="row">
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
@@ -45,7 +48,7 @@
               ></a>
             </div>
           </div>
-
+          <!-- Card Body -->
           <div class="card-body">
             <h3 class="card-title">MyLibrarian Online</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
@@ -80,6 +83,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Check It Out Course Platform -->
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
         <div class="card shadow-lg p-3 mb-5 bg-white rounded">
           <div
@@ -158,7 +163,9 @@
           </div>
         </div>
       </div>
-      <!-- Portfolio Project 3 **************** -->
+
+      <!-- Pediatric Speech Therapy -->
+      <!-- Card Header -->
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
         <div class="card shadow-lg p-3 bg-white rounded">
           <div
@@ -189,7 +196,7 @@
               ></a>
             </div>
           </div>
-
+          <!-- Card Body -->
           <div class="card-body">
             <h3 class="card-title">Pediatric Speech Therapy</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
@@ -221,7 +228,9 @@
           </div>
         </div>
       </div>
-      <!-- Portfolio project 4************** -->
+
+      <!-- Get Stumped Trivia  -->
+      <!-- Card Header -->
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
         <div class="card shadow-lg p-3 mb-5 bg-white rounded">
           <div
@@ -249,6 +258,7 @@
               ></a>
             </div>
           </div>
+          <!-- Card Body -->
           <div class="card-body">
             <h3 class="card-title">Get Stumped! Trivia App</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
@@ -273,21 +283,16 @@
 
             <div *ngIf="portfolioIsShown" class="mt-3">
               <p>
-                CV sous forme de site WEB responsive que j'ai mis en open-source
-                sur GitHub accompagné d'une publication d'un
-                <a
-                  title="Voir l'article"
-                  href="https://medium.com/zinedine-projects/beautiful-cv-portfolio-72921a198640"
-                  target="_blank"
-                  >article</a
-                >
-                sur medium.
+                This project is under development as a pure HTML, CSS, and
+                javascript project that utilizes an open API for trivia
+                questions and answers.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- Portfolio project 5**************** -->
+      <!-- Bracketology -->
+      <!-- Card Header -->
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
         <div class="card shadow-lg p-3 mb-5 bg-white rounded">
           <div
@@ -312,6 +317,7 @@
               ></a>
             </div>
           </div>
+          <!-- Card Body -->
           <div class="card-body">
             <h3 class="card-title">Bracketology</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
@@ -338,13 +344,140 @@
               <p>
                 This project is actively under development. It is a pure HTML
                 and CSS project at the moment, but will use JavaScript to allow
-                users to select their teams. Updates will be provided through an
-                API call.
+                users to select their teams. Updates to games and scores will be
+                provided through an API call.
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- SuperUser Do! -->
+      <!-- Card Header -->
+      <div class="col-lg-4 col-sm-12" data-aos="flip-up">
+        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+          <div
+            class="header d-flex flex-column"
+            style="height: 300px; width: 100%"
+          >
+            <div
+              id="sudo-img"
+              class="img-wrap card-header"
+              style="height: 300px; width: 100%"
+              [ngStyle]="{
+                backgroundImage: 'url(assets/images/sudotasks-logo.png)'
+              }"
+            ></div>
+            <div id="sudo-link" class="links d-flex justify-content-center">
+              <a
+                href="assets/images/sudotasks-logo.png"
+                data-gall="riddleGallery"
+                class="venobox vbox-item"
+                title="riddle"
+                ><i class="bx bx-zoom-in bx-md"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Card Body -->
+          <div class="card-body">
+            <h3 class="card-title">SuperUser Do!</h3>
+            <h5 class="card-title"><strong>Technologies:</strong></h5>
+            <p class="card-text">
+              Angular 14, HTML5, CSS3, JavaScript, TypeScript
+            </p>
+
+            <div class="d-flex flex-row justify-content-center">
+              <a
+                href="https://github.com/probsolved/sudoTasks"
+                target="_blank"
+                type="button"
+                class="btn btn-primary mr-3"
+                >Code Source</a
+              >
+              <button
+                (click)="detailOnClick('sudoIsShown')"
+                type="button"
+                class="btn btn-primary"
+              >
+                + Project Details
+              </button>
+            </div>
+
+            <div *ngIf="sudoIsShown" class="mt-3">
+              <p>
+                This application utilizes the Angular framework to create a
+                projects/tasks application that also makes us of the Angular
+                Calendar component.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <!-- Met With Me-->
+      <!-- Card Header -->
+      <div class="col-lg-4 col-sm-12" data-aos="flip-up">
+        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+          <div
+            class="header d-flex flex-column"
+            style="height: 300px; width: 100%"
+          >
+            <div
+              id="met-img"
+              class="img-wrap card-header"
+              style="height: 300px; width: 100%"
+              [ngStyle]="{
+                backgroundImage: 'url(assets/images/artboard_6.png)'
+              }"
+            ></div>
+            <div id="met-link" class="links d-flex justify-content-center">
+              <a
+                href="assets/images/artboard_6png"
+                data-gall="metGallery"
+                class="venobox vbox-item"
+                title="met"
+                ><i class="bx bx-zoom-in bx-md"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Card Body -->
+          <div class="card-body">
+            <h3 class="card-title">The Met. With Me.</h3>
+            <h5 class="card-title"><strong>Technologies:</strong></h5>
+            <p class="card-text">
+              Angular 14, HTML5, CSS3, JavaScript, TypeScript
+            </p>
+
+            <div class="d-flex flex-row justify-content-center">
+              <a
+                href="https://github.com/sjohnsonpbh/met-with-me"
+                target="_blank"
+                type="button"
+                class="btn btn-primary mr-3"
+                >Code Source</a
+              >
+              <button
+                (click)="detailOnClick('metIsShown')"
+                type="button"
+                class="btn btn-primary"
+              >
+                + Project Details
+              </button>
+            </div>
+
+            <div *ngIf="metIsShown" class="mt-3">
+              <p>
+                This group group project application provides an alternative
+                search GUI to the Metropolitan Museum of Art. I coded the API
+                search, footer, podcast, and popular art components.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
     </div>
   </div>
 </section>

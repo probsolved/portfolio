@@ -11,6 +11,8 @@ export class ProjectsComponent implements OnInit {
   portfolioIsShown : boolean=false;
   pokedexIsShown : boolean=false;
   riddleIsShown: boolean=false;
+  sudoIsShown: boolean=false;
+  metIsShown: boolean=false;
   venobox:any;
   constructor() { }
   detailOnClick(project:String){
@@ -20,6 +22,7 @@ export class ProjectsComponent implements OnInit {
       this.portfolioIsShown =false;
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
+      this.sudoIsShown=false;
     }
     else if(project=="mauticMonitoring"){
       this.mauticMonitoringIsShown = !this.mauticMonitoringIsShown;
@@ -27,6 +30,8 @@ export class ProjectsComponent implements OnInit {
       this.portfolioIsShown =false;
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
+      this.sudoIsShown=false;
+
     }
     else if(project=="portfolio"){
       this.portfolioIsShown = !this.portfolioIsShown;
@@ -34,6 +39,8 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
+      this.sudoIsShown=false;
+
     }
     else if(project=="pokedex"){
       this.pokedexIsShown = !this.pokedexIsShown;
@@ -41,6 +48,8 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.portfolioIsShown=false;
       this.riddleIsShown=false;
+      this.sudoIsShown=false;
+
     }
     else if(project=="riddleIsShown"){
       this.riddleIsShown = !this.riddleIsShown;
@@ -48,9 +57,26 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.portfolioIsShown=false;
       this.pokedexIsShown=false;
+      this.sudoIsShown=false;
 
     }
-    
+  else if(project=="sudoIsShown"){
+      this.sudoIsShown = !this.sudoIsShown;
+      this.riddleIsShown = false;
+      this.teamTravelerIsShown=false;
+      this.mauticMonitoringIsShown =false;
+      this.portfolioIsShown=false;
+      this.pokedexIsShown=false;
+    }
+      else if(project=="metIsShown"){
+        this.metIsShown = !this.metIsShown;
+      this.sudoIsShown = false;
+      this.riddleIsShown = false;
+      this.teamTravelerIsShown=false;
+      this.mauticMonitoringIsShown =false;
+      this.portfolioIsShown=false;
+      this.pokedexIsShown=false;
+    }
 
   }
   onMouse(idLink:String, idImage:String){
@@ -61,7 +87,7 @@ export class ProjectsComponent implements OnInit {
       $('#' + idImage).css( "opacity", "1" );
       $('#' +idLink).css( "opacity", "0" );
     }
-      
+
     );
 
     $( '#' + idImage ).on("mouseenter", function() {
@@ -80,8 +106,8 @@ export class ProjectsComponent implements OnInit {
    this.onMouse("pokedex-link","pokedex-img");
    this.onMouse("riddle-link","riddle-img");
    this.venobox=$('.venobox');
-   this.venobox.venobox(); 
-   
+   this.venobox.venobox();
+
   }
 
 }

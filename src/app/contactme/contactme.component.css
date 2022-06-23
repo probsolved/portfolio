@@ -4,3 +4,7 @@
   align-items: baseline;
   gap: 20px;
 }
+
+.fa-envelope {
+  margin: 5px;
+}

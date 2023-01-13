@@ -13,6 +13,7 @@ export class ProjectsComponent implements OnInit {
   riddleIsShown: boolean=false;
   sudoIsShown: boolean=false;
   metIsShown: boolean=false;
+  podspotIsShown: boolean=false;
   venobox:any;
   constructor() { }
   detailOnClick(project:String){
@@ -23,6 +24,7 @@ export class ProjectsComponent implements OnInit {
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
       this.sudoIsShown=false;
+      this.podspotIsShown=false;
     }
     else if(project=="mauticMonitoring"){
       this.mauticMonitoringIsShown = !this.mauticMonitoringIsShown;
@@ -31,6 +33,17 @@ export class ProjectsComponent implements OnInit {
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
       this.sudoIsShown=false;
+      this.podspotIsShown=false;
+    }
+
+      else if(project=="podspot"){
+      this.podspotIsShown = !this.podspotIsShown;
+      this.teamTravelerIsShown=false;
+      this.portfolioIsShown =false;
+      this.pokedexIsShown=false;
+      this.riddleIsShown=false;
+      this.sudoIsShown=false;
+      this.mauticMonitoringIsShown =false;
 
     }
     else if(project=="portfolio"){
@@ -40,6 +53,8 @@ export class ProjectsComponent implements OnInit {
       this.pokedexIsShown=false;
       this.riddleIsShown=false;
       this.sudoIsShown=false;
+      this.podspotIsShown=false;
+
 
     }
     else if(project=="pokedex"){
@@ -49,6 +64,8 @@ export class ProjectsComponent implements OnInit {
       this.portfolioIsShown=false;
       this.riddleIsShown=false;
       this.sudoIsShown=false;
+      this.podspotIsShown=false;
+
 
     }
     else if(project=="riddleIsShown"){
@@ -58,6 +75,8 @@ export class ProjectsComponent implements OnInit {
       this.portfolioIsShown=false;
       this.pokedexIsShown=false;
       this.sudoIsShown=false;
+      this.podspotIsShown=false;
+
 
     }
   else if(project=="sudoIsShown"){
@@ -67,6 +86,8 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.portfolioIsShown=false;
       this.pokedexIsShown=false;
+      this.podspotIsShown=false;
+
     }
       else if(project=="metIsShown"){
         this.metIsShown = !this.metIsShown;
@@ -76,6 +97,8 @@ export class ProjectsComponent implements OnInit {
       this.mauticMonitoringIsShown =false;
       this.portfolioIsShown=false;
       this.pokedexIsShown=false;
+      this.podspotIsShown=false;
+
     }
 
   }

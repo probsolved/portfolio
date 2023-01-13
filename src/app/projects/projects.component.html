@@ -2,10 +2,86 @@
   <div class="container">
     <h2><strong>Portfolio</strong></h2>
 
-    <!-- MyLibrarian Online -->
+    <!-- Podspot Digital -->
     <!-- Card Header -->
     <span class="bar-title mb-5"></span>
     <div class="row">
+      <!-- Podspot -->
+      <div class="col-lg-4 col-sm-12" data-aos="flip-up">
+        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+          <div
+            class="card-header d-flex flex-column"
+            style="height: 300px; width: 100%"
+          >
+            <div
+              id="mautic-img"
+              class="img-wrap"
+              style="height: 300px; width: 100%"
+              [ngStyle]="{
+                backgroundImage: 'url(assets/images/podspot.png'
+              }"
+            ></div>
+            <div
+              id="mautic-link"
+              class="links mt-auto d-flex justify-content-center"
+            >
+              <a
+                href="assets/images/podspot.png"
+                data-gall="MauticGallery"
+                class="venobox vbox-item"
+                title="Podspot Digital"
+                ><i class="bx bx-zoom-in bx-md"></i
+              ></a>
+              <a
+                href="assets/images/podspot2.png"
+                data-gall="MauticGallery"
+                class="venobox vbox-item"
+                title="Podspot Digital"
+              ></a>
+
+              <a href="#portfolio" title="En cours" target="_BLANK"
+                ><i class="bx bx-link bx-md"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Podspot</h3>
+            <h5 class="card-title"><strong>Technologies:</strong></h5>
+            <p class="card-text">
+              Wordpress, Elementor, CSS, JavaScript, Bluehost, Corporate Email
+            </p>
+            <div class="d-flex flex-row justify-content-center">
+              <a
+                href="https://www.podspotdigital.com"
+                target="_blank"
+                type="button"
+                class="btn btn-primary mr-3"
+                >Live Site</a
+              >
+              <button
+                (click)="detailOnClick('podspot')"
+                type="button"
+                class="btn btn-primary"
+              >
+                + Project Details
+              </button>
+            </div>
+            <div *ngIf="podspotIsShown" class="mt-3">
+              <p>
+                Podspot connects creators, podcasters, advertisers, and
+                audiobook publishers with each other and with their audiences.
+              </p>
+              <p>
+                The sales of digital advertisement is a fast-evolving world.
+                Podspot provides a means to accomplish this in a way that
+                enables creators and their networks to focus on their content
+                instead of the marketing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="col-lg-4 col-sm-12" data-aos="flip-up">
         <div class="card shadow-lg p-3 mb-5 bg-white rounded">
           <div
@@ -260,7 +336,7 @@
           </div>
           <!-- Card Body -->
           <div class="card-body">
-            <h3 class="card-title">Get Stumped! Trivia App</h3>
+            <h3 class="card-title">Stumped! Trivia App</h3>
             <h5 class="card-title"><strong>Technologies:</strong></h5>
             <p class="card-text">HMTL5, CSS3</p>
 
@@ -283,7 +359,7 @@
 
             <div *ngIf="portfolioIsShown" class="mt-3">
               <p>
-                This project is under development as a pure HTML, CSS, and
+                This pet project is an example of a purely HTML, CSS, and
                 javascript project that utilizes an open API for trivia
                 questions and answers.
               </p>
@@ -342,10 +418,10 @@
 
             <div *ngIf="riddleIsShown" class="mt-3">
               <p>
-                This project is actively under development. It is a pure HTML
-                and CSS project at the moment, but will use JavaScript to allow
-                users to select their teams. Updates to games and scores will be
-                provided through an API call.
+                This is another pet project. Purely an HTML and CSS project at
+                the moment, the roadmap includes allowing users to select their
+                teams. Updates to games and scores will be provided through an
+                API call.
               </p>
             </div>
           </div>
@@ -406,7 +482,7 @@
             <div *ngIf="sudoIsShown" class="mt-3">
               <p>
                 This application utilizes the Angular framework to create a
-                projects/tasks application that also makes us of the Angular
+                projects/tasks application that also makes use of the Angular
                 Calendar component.
               </p>
             </div>
@@ -468,9 +544,9 @@
 
             <div *ngIf="metIsShown" class="mt-3">
               <p>
-                This group group project application provides an alternative
-                search GUI to the Metropolitan Museum of Art. I coded the API
-                search, footer, podcast, and popular art components.
+                This group project application provides an alternative search
+                GUI to the Metropolitan Museum of Art. I coded the API search,
+                footer, podcast, and popular art components.
               </p>
             </div>
           </div>

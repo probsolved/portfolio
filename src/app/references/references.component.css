@@ -16,3 +16,10 @@ h2 {
   align-items: baseline;
   gap: 20px;
 }
+
+img {
+  border-radius: 5%;
+}
+
+.card-body {
+}

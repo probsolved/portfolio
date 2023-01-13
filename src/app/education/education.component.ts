@@ -13,6 +13,7 @@ export class EducationComponent implements OnInit {
   freelanceIsShown : boolean = false;
   alternanceIsShown:boolean = false;
   freelanceScotfyIsShown:boolean = false;
+  sysCoordIsShown: boolean = false;
   planeIcon: any ;
   gameIcon:any;
   volleyBallIcon:any;
@@ -21,7 +22,7 @@ export class EducationComponent implements OnInit {
       this.alternanceIsShown = !this.alternanceIsShown;
     }
     else if(id=="freelance_detail"){
-     this.freelanceIsShown = !this.freelanceIsShown;
+      this.freelanceIsShown = !this.freelanceIsShown;
     }
     else if(id=="stage_detail"){
       this.stageIsShown = !this.stageIsShown;
@@ -29,10 +30,12 @@ export class EducationComponent implements OnInit {
     else if(id=="freelanceScotfy_detail"){
       this.freelanceScotfyIsShown = !this.freelanceScotfyIsShown;
     }
-   
+    else if(id=="syscoord_detail"){
+      this.sysCoordIsShown = !this.sysCoordIsShown;
+    }
   }
- 
-  constructor() { 
+
+  constructor() {
   }
 
   ngOnInit(): void {
